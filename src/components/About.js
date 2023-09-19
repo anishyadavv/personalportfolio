@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 const About = () => {
   return (
     <div>
-      <div id="about" className="aboutSection pt-5 ps-5 me-5">
+      <div id="about" className="aboutSection  ps-5 pe-5">
         <div className="about-main  text-center m-auto">
           <h2
             className="text-center about-heading"
@@ -17,7 +17,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="row about-content mt-5">
+        <div className="row about-content">
           <div className="col-lg-6 about-left">
             <h2 className="mb-5" style={{ color: "#000", fontWeight: "700" }}>
               Get to know me!

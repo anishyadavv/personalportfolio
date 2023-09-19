@@ -35,7 +35,7 @@
 .about-heading::after{
     content: '';
     position: absolute;
-    top: calc(100% + 3.3em);
+    top: 132%;
     height: 5px;
     width: 2rem;
     background: #3446eb;
@@ -58,9 +58,11 @@
 .aboutSection{
   height: auto;
   background-color: #fafafa;
+  padding-top: 20vh;
 }
 .project-section{
   height: auto;
+  padding-top: 20vh;
 }
 .about-left,.about-right{
       padding: 2rem;
@@ -72,11 +74,13 @@
   font-size: 1.1rem;
   font-weight: 400;
   color:#666;
+  margin-top: 15vh;
+  padding-bottom: 15vh;
 }
 .about-main{
   width: 50vw;
 }
-.project-content button,.about-content button{
+.contact button, .project-content button,.about-content button{
   border-radius: 6px;
   font-size: 1rem;
   font-weight: 700;
@@ -94,9 +98,38 @@
 }
 .project-content{
   margin-top: 20vh;
+  padding-bottom: 15vh;
 }
-
-@media only screen and (max-width: 900px) {
+.contact-form{
+  max-width: 900px;
+  background-color: white;
+  padding: 5vw;
+  border-radius: 10px;
+  overflow: auto;
+  font-weight: 600;
+  color: #333;
+  margin-top: 20vh;
+  width: 90%;
+}
+.contact{
+  width: 100%;
+  height: auto;
+  overflow:auto;
+  background:url(https://img.freepik.com/free-photo/white-concrete-wall_53876-92803.jpg?w=740&t=st=1694951418~exp=1694952018~hmac=7f33e495078dc070b02049916fa03a07c015dc472f630862601733bc5592bf8b);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20vh;
+  padding-top: 10vh;
+}
+.footer{
+  color: #fff;
+  background-color: #000;
+  padding: 7vw;
+}
+.footer p{
+  width: 30vw;
+}
+@media only screen and (max-width: 992px) {
   .content{
     width: 80vw;
   }
@@ -105,5 +138,8 @@
   }
   .project-right{
     text-align: center;
+  }
+  .footer p{
+    width: 100%;
   }
 }

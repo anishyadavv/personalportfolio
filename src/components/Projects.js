@@ -4,7 +4,7 @@ import pedalpe from "../assets/pedalpe.jpg"
 const Projects = () => {
   return (
     <div>
-      <div id="project" className="project-section pt-5 me-4 ms-4">
+      <div id="project" className="project-section  me-4 ms-4">
         <div className="about-main  text-center m-auto">
           <h2
             className="text-center project-heading"
