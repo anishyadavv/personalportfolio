@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 const Contact = () => {
   return (
     <div className="contact">
-      <div id="Contact" className="contact-section pt-5 me-4 ms-4">
+      <div id="contact" className="contact-section pt-5 me-4 ms-4">
         <div className="contact-main  text-center m-auto">
           <h2
             className="text-center project-heading"

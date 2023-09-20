@@ -11,6 +11,7 @@ const About = () => {
           >
             ABOUT ME
           </h2>
+          <div className="underline"></div>
           <p className="mt-5" style={{ fontSize: "1.2rem", color: "#666" }}>
             Here you will find more information about me, what I do, and my
             current skills mostly in terms of programming and technology
@@ -61,9 +62,11 @@ const About = () => {
               me.
             </div>
 
-            <Button variant="primary" size="lg" className="mt-5 shadow">
-              CONTACT
-            </Button>
+            <a href="#contact">
+              <Button variant="primary" size="lg" className="mt-5 shadow">
+                CONTACT
+              </Button>
+            </a>
           </div>
           <div className="col-lg-6 about-right">
             <h2 className="mb-5" style={{ color: "#000", fontWeight: "700" }}>

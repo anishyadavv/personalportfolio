@@ -32,7 +32,7 @@
   font-weight: 500;
   color: #838383;
 }
-.about-heading::after{
+/* .about-heading::after{
     content: '';
     position: absolute;
     top: 132%;
@@ -42,7 +42,7 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
-}
+} */
 .underline{
   content: '';
     position:relative;
@@ -141,5 +141,8 @@
   }
   .footer p{
     width: 100%;
+  }
+  .heading{
+    font-size: 2rem;
   }
 }

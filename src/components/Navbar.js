@@ -21,28 +21,28 @@ function navbarHome() {
           <Nav className="ms-auto">
             <Nav.Link
               style={{ fontWeight: "700" }}
-              href="#Home"
+              href="#home"
               className="me-5"
             >
               HOME
             </Nav.Link>
             <Nav.Link
               style={{ fontWeight: "700" }}
-              href="./#About"
+              href="#about"
               className="me-5"
             >
               ABOUT
             </Nav.Link>
             <Nav.Link
               style={{ fontWeight: "700" }}
-              href="#Project"
+              href="#project"
               className="me-5"
             >
               PROJECT
             </Nav.Link>
             <Nav.Link
               style={{ fontWeight: "700" }}
-              href="#Contact"
+              href="#contact"
               className="me-5"
             >
               CONTACT
