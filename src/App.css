@@ -2,7 +2,7 @@
   width: 100%;
   height: 100vh;
   overflow:auto;
-  background:url(https://img.freepik.com/free-photo/white-concrete-wall_53876-92803.jpg?w=740&t=st=1694951418~exp=1694952018~hmac=7f33e495078dc070b02049916fa03a07c015dc472f630862601733bc5592bf8b);
+  background:url(https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830026.jpg?w=740&t=st=1695389656~exp=1695390256~hmac=742ded209a893bca188c7447e50e40790e52568995f3ab6cd39173bdb6e90ce8);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -115,7 +115,7 @@
   width: 100%;
   height: auto;
   overflow:auto;
-  background:url(https://img.freepik.com/free-photo/white-concrete-wall_53876-92803.jpg?w=740&t=st=1694951418~exp=1694952018~hmac=7f33e495078dc070b02049916fa03a07c015dc472f630862601733bc5592bf8b);
+  background:url(https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830026.jpg?w=740&t=st=1695389656~exp=1695390256~hmac=742ded209a893bca188c7447e50e40790e52568995f3ab6cd39173bdb6e90ce8);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 20vh;
@@ -128,6 +128,12 @@
 }
 .footer p{
   width: 30vw;
+}
+.spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 @media only screen and (max-width: 992px) {
   .content{
