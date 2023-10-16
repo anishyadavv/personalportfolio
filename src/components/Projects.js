@@ -1,6 +1,9 @@
-import React from 'react'
-import Button from "react-bootstrap/Button";
-import pedalpe from "../assets/pedalpe.jpg"
+import React from "react";
+import Project from "./Project";
+import pedalpe from "../assets/pedalpe.jpg";
+import mynotebook from "../assets/mynotebook.jpg";
+import snakeGame from "../assets/SnakeGame.jpg";
+import tictactoe from "../assets/tictactoe.jpg";
 const Projects = () => {
   return (
     <div>
@@ -12,35 +15,39 @@ const Projects = () => {
           >
             PROJECTS
           </h2>
-          <div className='underline'></div>
+          <div className="underline"></div>
           <p className="mt-5" style={{ fontSize: "1.2rem", color: "#666" }}>
             Here you will find some of the personal and clients projects that I
             created with each project containing its own case study
           </p>
         </div>
-
-        <div className="row project-content mb-5">
-          <div className="col-lg-7 project-left text-center ps-5 pe-5 mb-5">
-            <img src={pedalpe} alt="" style={{width:'100%'}}/>
-          </div>
-          <div className="col-lg-5 project-right m-auto pe-5 ps-5">
-            <h2 className="mb-4" style={{ color: "#000", fontWeight: "700" }}>
-              Pedal pe
-            </h2>
-            <p  style={{ fontSize: "1.1rem", color: "#666" }}>
-              Dopefolio is a successful Open-Source project that I created which
-              have been featured on some of the biggest tech sites like
-              CSS-Tricks, Hostinger, etc & used by thousands of developers
-              globally
-            </p>
-            <Button variant="primary" size="lg" className="mt-5 shadow">
-              VISIT SITE
-            </Button>
-          </div>
-        </div>
+        <Project
+          title="My Notebook"
+          description="A web app where user can login and store their important notes. Notes can be deleted, edited and added."
+          link="https://keepnoteshere.netlify.app/"
+          image={mynotebook}
+        />
+        <Project
+          title="SnakeGame"
+          description="A website where user can play snake game. User can also see the high score of the game."
+          link="https://anishyadavv.github.io/SnakeGame/"
+          image={snakeGame}
+        />
+        <Project
+          title="Zero Kaati"
+          description="A place where you can play tic-tac-toe with your friends and enjoy the game."
+          link="https://anishyadavv.github.io/tic-tac-toe/"
+          image={tictactoe}
+        />
+        <Project
+          title="Pedal pe"
+          description="A web app where user can login and rent cycles on hourly basis inside campus."
+          link="https://pedalpe.azurewebsites.net/"
+          image={pedalpe}
+        />
       </div>
     </div>
   );
-}
+};
 
-export default Projects
+export default Projects;
