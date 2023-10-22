@@ -4,6 +4,7 @@ import pedalpe from "../assets/pedalpe.jpg";
 import mynotebook from "../assets/mynotebook.jpg";
 import snakeGame from "../assets/SnakeGame.jpg";
 import tictactoe from "../assets/tictactoe.jpg";
+import musicPlayer from "../assets/musicplayer.jpg";
 const Projects = () => {
   return (
     <div>
@@ -38,6 +39,12 @@ const Projects = () => {
           description="A place where you can play tic-tac-toe with your friends and enjoy the game."
           link="https://anishyadavv.github.io/tic-tac-toe/"
           image={tictactoe}
+        />
+        <Project
+        title="Music Player"
+        description="A website where user can listen Best of Pawan Singh songs."
+        link="https://anishyadavv.github.io/MusicPlayer/"
+        image={musicPlayer}
         />
         <Project
           title="Pedal pe"

@@ -13,8 +13,9 @@ const About = () => {
           </h2>
           <div className="underline"></div>
           <p className="mt-5" style={{ fontSize: "1.2rem", color: "#666" }}>
-            Here you will find more information about me, what I do, and my
-            current skills mostly in terms of programming and technology
+            Explore my portfolio to discover more about my expertise as a
+            Frontend Developer, my current programming and technological skills,
+            and the projects that bring it all to life
           </p>
         </div>
 

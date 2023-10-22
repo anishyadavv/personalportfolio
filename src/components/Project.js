@@ -7,7 +7,7 @@ const Project = (props) => {
     <div>
       <div className="row project-content mb-5">
         <div className="col-lg-7 project-left text-center ps-5 pe-5 mb-5">
-          <img src={image} alt="" style={{ width: "100%" }} />
+          <img src={image} alt="" style={{ width: "100%",opacity:"1" }} />
         </div>
         <div className="col-lg-5 project-right m-auto pe-5 ps-5">
           <h2 className="mb-4" style={{ color: "#000", fontWeight: "700" }}>

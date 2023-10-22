@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../logo.svg";
+import logo from "../assets/logo.png";
 
 function navbarHome() {
   return (
@@ -13,7 +13,7 @@ function navbarHome() {
     >
       <Container>
         <Navbar.Brand href="#home" style={{ fontWeight: "700" }}>
-          <img src={logo} alt="logo" width={100} />
+          <img className="logo" src={logo} alt="logo" width={100} />
           ANISH KUMAR
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

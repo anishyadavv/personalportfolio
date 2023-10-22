@@ -48,7 +48,7 @@ const Contact = () => {
   };
   return (
     <>
-    {spinnerstate && <Spinner style={{position:'fixed',top:"50%",left:"50%"}}/>}
+    { spinnerstate &&<Spinner style={{position:'fixed',top:"50%",left:"50%"}}/>}
       <div className="contact">
         <div id="contact" className="contact-section pt-5 me-4 ms-4">
           <div className="contact-main  text-center m-auto">
