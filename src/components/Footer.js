@@ -15,19 +15,19 @@ const Footer = () => {
       <div div className="col-lg-3 footer-right">
         <h2>SOCIAL</h2>
         <div className="d-flex align-items-center ">
-          <a className="me-2" href="https://www.linkedin.com/in/anishyadavv/" target="_blank">
+          <a className="me-2" href="https://www.linkedin.com/in/anishyadavv/" target="_blank" rel="noreferrer">
             <i
               class="fa-brands fa-linkedin fa-3x"
               style={{ color: "#ffffff" }}
             ></i>
           </a>
-          <a className="me-2" href="https://github.com/anishyadavv" target="_blank">
+          <a className="me-2" href="https://github.com/anishyadavv" target="_blank" rel="noreferrer">
             <i
               class="fa-brands fa-3x fa-github"
               style={{ color: "#ffffff" }}
             ></i>
           </a>
-          <a href="https://www.instagram.com/anishyadavv/" target="_blank">
+          <a href="https://www.instagram.com/anishyadavv/" target="_blank" rel="noreferrer">
             <i class="fa-brands fa-square-instagram fa-3x" style={{color: "#ffffff"}}></i>
           </a>
         </div>
