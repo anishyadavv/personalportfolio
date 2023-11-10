@@ -1,8 +1,9 @@
-import React, {useState } from "react";
+import React, { useState, useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import { Spinner } from "react-bootstrap";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [spinnerstate, setSpinnerState] = useState(false);
@@ -10,45 +11,43 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const emptyinputs =()=>{
+  const emptyinputs = () => {
     setEmail("");
     setName("");
     setMessage("");
-  }
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  };
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault(); // prevents the page from reloading when you hit “Send”
     setSpinnerState(true);
-    try {
-      const data = { name, email, message };
-      const response = await fetch(
-        "https://portfoliobackend-477y.onrender.com/contact",
-        {
-          method: "POST", // *GET, POST, PUT, DELETE, etc.
-          mode: "cors", // no-cors, *cors, same-origin
-          headers: {
-            "Content-Type": "application/json",
-            // 'Content-Type': 'application/x-www-form-urlencoded',
-          },
-          body: JSON.stringify(data), // body data type must match "Content-Type" header
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_USER_ID
+      )
+      .then(
+        (result) => {
+          // show the user a success message
+          emptyinputs();
+          setSpinnerState(false);
+          setMessageSent(true);
+        },
+        (error) => {
+          // show the user an error
+          alert("Message Not Sent");
+          setSpinnerState(false);
         }
       );
-      const result = await response.json();
-      if(result.success){
-        emptyinputs();
-        setSpinnerState(false);
-        setMessageSent(true);
-      }
-      else{
-        alert("Message Not Sent");
-        setSpinnerState(false);
-      }
-    } catch (err) {
-      console.log(err.message);
-    }
   };
   return (
     <>
-    { spinnerstate &&<Spinner style={{position:'fixed',top:"50%",left:"50%"}}/>}
+      {spinnerstate && (
+        <Spinner style={{ position: "fixed", top: "50%", left: "50%" }} />
+      )}
       <div className="contact">
         <div id="contact" className="contact-section pt-5 me-4 ms-4">
           <div className="contact-main  text-center m-auto">
@@ -66,7 +65,7 @@ const Contact = () => {
           </div>
         </div>
         <Container className="contact-form shadow-lg">
-          <Form onSubmit={handleSubmit}>
+          <Form ref={form} onSubmit={sendEmail}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Name</Form.Label>
               <Form.Control
@@ -77,7 +76,9 @@ const Contact = () => {
                 }}
                 type="text"
                 placeholder="Enter Your Name"
-                id="name"
+                name="user_name"
+                id="user_name"
+                value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
               />
@@ -92,7 +93,9 @@ const Contact = () => {
                 }}
                 type="email"
                 placeholder="Enter Your Email"
-                id="email"
+                id="user_email"
+                name="user_email"
+                value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
@@ -109,7 +112,9 @@ const Contact = () => {
                   fontWeight: "600",
                 }}
                 id="message"
+                name="message"
                 onChange={(e) => setMessage(e.target.value)}
+                value={message}
                 required
               />
             </Form.Group>
@@ -121,7 +126,11 @@ const Contact = () => {
             >
               Submit
             </Button>
-            {messagesent && <p className="mt-2 text-success">Your message is sent Successfully</p>}
+            {messagesent && (
+              <p className="mt-2 text-success">
+                Your message is sent Successfully
+              </p>
+            )}
           </Form>
         </Container>
       </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Sidebar = () => {
   return (
     <div>
-      <div className="sidebar">
+      <div className="sidebar shadow">
         <a
           href="https://www.linkedin.com/in/anishyadavv/"
           target="_blank"
@@ -11,7 +11,7 @@ const Sidebar = () => {
         >
           <i
             className="fa-brands fa-linkedin fa-3x"
-            style={{ color: "#ffffff" }}
+            style={{ color: "#3a3a3a" }}
           ></i>
         </a>
         <a
@@ -21,7 +21,7 @@ const Sidebar = () => {
         >
           <i
             className="fa-brands fa-3x fa-github"
-            style={{ color: "#ffffff" }}
+            style={{ color: "#3a3a3a" }}
           ></i>
         </a>
         <a
@@ -31,7 +31,7 @@ const Sidebar = () => {
         >
           <i
             className="fa-brands fa-square-instagram fa-3x"
-            style={{ color: "#ffffff" }}
+            style={{ color: "#3a3a3a" }}
           ></i>
         </a>
         <a
@@ -41,7 +41,7 @@ const Sidebar = () => {
         >
           <i
             className="fa-brands fa-3x fa-square-x-twitter"
-            style={{ color: "#ffffff" }}
+            style={{ color: "#3a3a3a" }}
           ></i>
         </a>
       </div>
