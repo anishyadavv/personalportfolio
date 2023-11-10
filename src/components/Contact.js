@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import { Spinner } from "react-bootstrap";
 
 const Contact = () => {
-  const [spinnerstate, setSpinnerState] = useState(false); 
+  const [spinnerstate, setSpinnerState] = useState(false);
   const [messagesent, setMessageSent] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
