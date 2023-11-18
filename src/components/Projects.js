@@ -1,10 +1,10 @@
 import React from "react";
 import Project from "./Project";
-import mynotebook from "../assets/mynotebook.jpg";
-import snakeGame from "../assets/SnakeGame.jpg";
-import tictactoe from "../assets/tictactoe.jpg";
-import musicPlayer from "../assets/musicplayer.jpg";
-import textword from "../assets/textword.jpg";
+import mynotebook from "../assets/mynotebook.png";
+import snakeGame from "../assets/SnakeGame.png";
+import tictactoe from "../assets/tictactoe.png";
+import musicPlayer from "../assets/musicplayer.png";
+import textword from "../assets/textword.png";
 const Projects = () => {
 
   const projects = [
@@ -57,7 +57,7 @@ const Projects = () => {
           <div className="underline"></div>
           <p className="mt-5" style={{ fontSize: "1.2rem", color: "#666" }}>
             Here you will find some of the personal and clients projects that I
-            created with each project containing its own case study
+            created
           </p>
         </div>
 
