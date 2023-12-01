@@ -13,7 +13,7 @@ const Projects = () => {
       description:
         "A web app where user can login and store their important notes. Notes can be deleted, edited and added.",
       tech: "React, Node, Express, MongoDB, Bootstrap",
-      link: "https://keepnoteshere.netlify.app/",
+      link: "https://keepnoteshere.onrender.com/",
       githubLink: "https://github.com/anishyadavv/MyNotebook",
       image: mynotebook,
     },
