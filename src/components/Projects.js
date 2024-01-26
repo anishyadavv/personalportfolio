@@ -4,7 +4,8 @@ import mynotebook from "../assets/mynotebook.png";
 import snakeGame from "../assets/SnakeGame.png";
 import tictactoe from "../assets/tictactoe.png";
 import musicPlayer from "../assets/musicplayer.png";
-import textword from "../assets/textword.png";
+import apple from "../assets/Apple.jpg";
+import pedalpe from "../assets/pedalpe.jpg";
 const Projects = () => {
 
   const projects = [
@@ -18,6 +19,15 @@ const Projects = () => {
       image: mynotebook,
     },
     {
+      title: "Apple Clone",
+      description:
+        "Clone of Apple India website to showcase my frontend skills",
+      link: "https://appleindi.netlify.app/",
+      tech: "HTML, CSS, JavaScript, React",
+      githubLink: "https://github.com/anishyadavv/AppleHomePage",
+      image: apple,
+    },
+    {
       title: "Music Player",
       description: "A website where user can listen Best of Pawan Singh songs.",
       link: "https://anishyadavv.github.io/MusicPlayer/",
@@ -26,13 +36,13 @@ const Projects = () => {
       image: musicPlayer,
     },
     {
-      title: "TextWordLine",
+      title: "Pedal Pe",
       description:
-        "A React app where user can count the words, characters and line of paragraphs and also user can calculate how much time it will take to read the paragraph along with that user can convert text into Uppercase and Lowercase.",
-      link: "https://textwordline.netlify.app/",
-      githubLink: "https://github.com/anishyadavv/TextUtils-React-first",
-      tech: "React, Bootstrap",
-      image: textword,
+        "A Web App where user can rent a bicycle on hourly basis. This app has proper Authentication system, only verified user can use this application. Features like forgot password and payment works seamlessly",
+      link: "https://pedalpe.azurewebsites.net/",
+      tech: "HTML, CSS, JavaScript, NodeJS, Express, Mongo DB, EJS",
+      githubLink: "https://github.com/anishyadavv/Pedal-Pe",
+      image: pedalpe,
     },
     {
       title: "Zero Kaati",
@@ -74,7 +84,15 @@ const Projects = () => {
         {
           projects.map((project)=>{
             return(
-              <Project key={project.link} title={project.title} description={project.description} link={project.link} image={project.image} tech={project.tech} githubLink = {project.githubLink}/>
+              <Project
+                key={project.link}
+                title={project.title}
+                description={project.description}
+                link={project.link}
+                image={project.image}
+                tech={project.tech}
+                githubLink = {project.githubLink}
+              />
             )
           })
         }
