@@ -12,7 +12,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div div className="col-lg-3 footer-right">
+      <div className="col-lg-3 footer-right">
         <h2>SOCIAL</h2>
         <div className="d-flex align-items-center ">
           <a

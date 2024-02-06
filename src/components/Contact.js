@@ -66,7 +66,7 @@ const Contact = () => {
         </div>
         <Container className="contact-form shadow-lg">
           <Form ref={form} onSubmit={sendEmail}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3">
               <Form.Label>Name</Form.Label>
               <Form.Control
                 style={{
@@ -83,7 +83,7 @@ const Contact = () => {
                 required
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3">
               <Form.Label>Email</Form.Label>
               <Form.Control
                 style={{
