@@ -7,14 +7,13 @@ import musicPlayer from "../assets/musicplayer.png";
 import apple from "../assets/Apple.jpg";
 import pedalpe from "../assets/pedalpe.jpg";
 const Projects = () => {
-
   const projects = [
     {
       title: "My Notebook",
       description:
         "A web app where user can login and store their important notes. Notes can be deleted, edited and added.",
-      tech: "React, Node, Express, MongoDB, Bootstrap",
-      link: "https://keepnoteshere.onrender.com/",
+      tech: "React, Node, Express, MongoDB, Bootstrap, Redux Toolkit",
+      link: "https://mynotebook.site",
       githubLink: "https://github.com/anishyadavv/MyNotebook",
       image: mynotebook,
     },
@@ -81,21 +80,19 @@ const Projects = () => {
           </p>
         </div>
 
-        {
-          projects.map((project)=>{
-            return(
-              <Project
-                key={project.link}
-                title={project.title}
-                description={project.description}
-                link={project.link}
-                image={project.image}
-                tech={project.tech}
-                githubLink = {project.githubLink}
-              />
-            )
-          })
-        }
+        {projects.map((project) => {
+          return (
+            <Project
+              key={project.link}
+              title={project.title}
+              description={project.description}
+              link={project.link}
+              image={project.image}
+              tech={project.tech}
+              githubLink={project.githubLink}
+            />
+          );
+        })}
       </div>
     </div>
   );

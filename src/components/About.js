@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Button from "react-bootstrap/Button";
 const About = () => {
   return (
@@ -82,14 +82,15 @@ const About = () => {
               <div className="skill-tag">Github</div>
               <div className="skill-tag">Responsive Design</div>
               <div className="skill-tag">Express Basics</div>
-              <div className="skill-tag">SQL Basics</div>
               <div className="skill-tag">Node Basics</div>
+              <div className="skill-tag">Redux Toolkit</div>
+              <div className="skill-tag">Tailwind Css</div>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default About
+export default About;
