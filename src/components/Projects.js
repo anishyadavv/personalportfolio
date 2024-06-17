@@ -40,7 +40,7 @@ const Projects = () => {
         "A Web App where user can rent a bicycle on hourly basis. This app has proper Authentication system, only verified user can use this application. Features like forgot password and payment works seamlessly",
       link: "https://pedalpe.azurewebsites.net/",
       tech: "HTML, CSS, JavaScript, NodeJS, Express, Mongo DB, EJS",
-      githubLink: "https://github.com/anishyadavv/Pedal-Pe",
+      githubLink: "https://pedal-pe.onrender.com",
       image: pedalpe,
     },
     {
