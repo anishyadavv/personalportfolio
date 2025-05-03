@@ -13,7 +13,7 @@ const Projects = () => {
       description:
         "A web app where user can login and store their important notes. Notes can be deleted, edited and added.",
       tech: "React, Node, Express, MongoDB, Bootstrap, Redux Toolkit",
-      link: "https://mynotebook.site",
+      link: "https://keepnoteshere.netlify.app/",
       githubLink: "https://github.com/anishyadavv/MyNotebook",
       image: mynotebook,
     },
@@ -38,7 +38,7 @@ const Projects = () => {
       title: "Pedal Pe",
       description:
         "A Web App where user can rent a bicycle on hourly basis. This app has proper Authentication system, only verified user can use this application. Features like forgot password and payment works seamlessly",
-      link: "https://pedalpe.azurewebsites.net/",
+      link: "https://pedal-pe.onrender.com",
       tech: "HTML, CSS, JavaScript, NodeJS, Express, Mongo DB, EJS",
       githubLink: "https://pedal-pe.onrender.com",
       image: pedalpe,
